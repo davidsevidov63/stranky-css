@@ -1,0 +1,73 @@
+
+
+<html lang="cs">
+<head>
+    <link rel="stylesheet" href="style.css">
+
+    <meta charset="UTF-8">
+    <title>Já a moje rodina</title>
+</head>
+<body>
+
+<nav>
+    <ul>
+        <li><a href="index.html">Hlavní stránka</a></li>
+        <li><a href="ja.html">Já</a></li>
+        <li><a href="mama.html">Máma</a></li>
+        <li><a href="tata.html">Táta</a></li>
+        <li><a href="potkan.html">Můj potkan</a></li>
+    </ul>
+</nav>
+
+<h1>Já a moje rodina</h1>
+
+<h2>Úvod</h2>
+<p>
+    Jmenuji se David. Bydlím se svojí rodinou v našem bytě. 
+    Moje rodina je pro mě důležitá a trávím s ní hodně času. 
+    Každý z nás je jiný a má jiné zájmy. Přesto se většinou dokážeme domluvit a držíme spolu.
+</p>
+
+<p>
+    Tento web jsem vytvořil jako školní projekt. 
+    Na jednotlivých stránkách popíšu sebe, mámu, tátu a mého potkana. 
+    Někde se zmíním i o mém bráchovi, protože s ním trávím hodně času. 
+    Stránky jsou jednoduché, ale stačí na základní představení mojí rodiny. 
+    V budoucnu bych je klidně mohl ještě vylepšit.
+</p>
+
+<h2>Naše rodina</h2>
+<ul>
+    <li>Já – student, kterého baví počítače.</li>
+    <li>Máma – stará se o domácnost a chodí do práce.</li>
+    <li>Táta – pomáhá mi s technikou a má rád auta.</li>
+    <li>Brácha – občas se hádáme, ale je to parťák.</li>
+    <li>Můj potkan – malý domácí mazlíček, který je docela chytrý.</li>
+</ul>
+
+<h2>Obrázky</h2>
+<img src="obrazek.jpg" alt="Moje rodina" width="250"><br>
+
+
+<h2>Aktuální čas</h2>
+<p>Teď je: <span id="cas"></span></p>
+
+<p>
+    Další informace o mně najdete na stránce 
+    <a href="ja.html">Já</a>. Něco o mojí mámě je na stránce 
+    <a href="mama.html">Máma</a>. O tátovi se můžete dočíst na stránce 
+    <a href="tata.html">Táta</a>. A o mém mazlíčkovi je stránka 
+    <a href="potkan.html">Můj potkan</a>.
+</p>
+
+<script>
+    function zobrazCas() {
+        var ted = new Date();
+        document.getElementById("cas").textContent = ted.toLocaleString("cs-CZ");
+    }
+    zobrazCas();
+    setInterval(zobrazCas, 1000);
+</script>
+
+</body>
+</html>
